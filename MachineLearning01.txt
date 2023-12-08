@@ -1,0 +1,96 @@
+machine learning : machine learning is a part of AI
+
+supervised learning : In supervised learning we give traning data to algorithm, at which this algorithm have to train. and we get output after traning. (traning data have correct answer)[traning data, both input output, classification]
+
+unsupervised learning : in unsupervised learning we give raw data to algorithm to classifying data into group. (traning data have no answer)[only input, clustering]
+
+reinforcement learning : [reward and penalty]
+
+deep learning : deep laerning is a part of machine learming [nural networks layer, unsupervised learning]
+
+machine leraning vs deep learning : more traning time less exicutation time for deep learning. less traning time more exicutation time for machine learning.
+
+classification algorithms : use to give the 0 or 1 answer (ex - male or female)
+
+anomaly detection algorithms : use to get the out layer (ex - to find a tumar in MRI)
+
+clustring algorithms : use to clasifying (ex - human, birds, animal)
+
+regression algorithms : use to pridict future on the basis of value feature (ex - pridict rain)
+
+linear regression : a value of y or every value of x [straight line]
+
+logistical regression : binary answer [sigmoid function]
+
+decision tree : 1. classification tree    2. regression tree
+
+Attribute Selection Measure(ASM) : The best attribute or feature is selected using the Attribute Selection Measure(ASM). The attribute selected is the root node feature. ASM is a technique used for the selecting best attribute for discrimination among tuples.
+
+Variance : Variance measures how much the predicted and the target variables vary in different samples of a dataset. It is used for regression problems in decision trees. Mean squared error, Mean Absolute Error, friedman_mse, or Half Poisson deviance are used to measure the 
+            variance for the regression tasks in the decision tree.
+
+Impurity: A measurement of the target variable’s homogeneity in a subset of data. It refers to the degree of randomness or uncertainty in a set of examples. The Gini index and entropy are two commonly used impurity measurements in decision trees for classifications task 
+
+https://towardsdatascience.com/decision-trees-explained-entropy-information-gain-gini-index-ccp-pruning-4d78070db36c
+
+Information Gain: Information gain is a measure of the reduction in impurity achieved by splitting a dataset on a particular feature in a decision tree. The splitting criterion is determined by the feature that offers the greatest information gain, It is used to determine the 
+                   most informative feature to split on at each node of the tree, with the goal of creating pure subsets
+
+information gain = entropy_parent - avrage_entropy_of_child
+
+Pruning: The process of removing branches from the tree that do not provide any additional information or lead to overfitting.
+
+Node purity : Node purity is a metric used in decision trees to determine whether to split a node. A node is 100% pure when all of its data belongs to a single class. A node is 100% impure when a node is split evenly 50/50. 
+                The purity of a node is calculated using the entropy value. The lower the entropy value, the higher the purity of the node. The Information Gain is higher for purer nodes, with a maximum of 1 when entropy is 0. 
+                In practical real-world scenarios, it's very unlikely to have features that can give you completely pure nodes after the split. Smaller trees are more easily able to attain pure leaf nodes, but as a tree grows in size, it becomes increasingly difficult to 
+                maintain this purity. 
+
+
+
+variable selection criterion : variable selection criterion in Decision Trees can be done via two approaches
+                                1. Entropy and Information Gain
+                                2. Gini Index
+
+In the context of Decision Trees, entropy is a measure of disorder or impurity in a node. Thus, a node with more variable composition, such as 2Pass and 2 Fail would be considered to have higher Entropy than a node which has only pass or only fail. The maximum level of entropy or disorder is given by 1 and minimum entropy is given by a value 0.
+
+Leaf nodes which have all instances belonging to 1 class would have an entropy of 0. Whereas, the entropy for a node where the classes are divided equally would be 1.
+
+
+in entropy and information gain mathord root node or parent node is determined by information gain (root node or parent node is that which have grater information gain value)
+
+Gini Index : Gini Index or Impurity measures the probability for a random instance being misclassified when chosen randomly. The lower the Gini Index, the better the lower the likelihood of misclassification.
+
+The Gini index has a maximum impurity is 0.5 and maximum purity is 0, whereas Entropy has a maximum impurity of 1 and maximum purity is 0
+
+Sklearn’s SimpleImputer allows you to replace missing values based on mean/median/most frequent values in the respective columns
+
+To improve model accuuracy :
+1. Feature Engineering
+2. Feature Transformation
+3. Use of Ensemble and Boosting Algorithms. (https://towardsdatascience.com/ensemble-methods-bagging-boosting-and-stacking-c9214a10a205)
+4. Hyperparameter Tuning. (tweak algorithm for some value of parameters such as tree depth, estimators, learning rate, etc, and get the best configration)
+
+r2 score : Coefficient of determination also called as R2 score is used to evaluate the performance of a linear regression model. It is the amount of the variation in the output result which is predicted from the input values. It is used to check how well-observed results are reproduced by the model, depending on the ratio of total deviation of results described by the model. r2 score ranges from 1 to -infinity where 1 show that model is full fit on test data while -infinity show that model is worst fit on test data.
+
+
+Pipeline : In ML when we want to write a big code, we split big code in small code and write it and order it in a architecture this architecture is called a pipe line.
+
+Data leakage (or leakage) happens when your training data contains information about the target, but similar data will not be available when the model is used for prediction. This leads to high performance on the training set (and possibly even the validation data), but the model will perform poorly in production.
+
+There are two main types of leakage: target leakage and train-test contamination :
+1. target leakage : when the features of training data have the information which is directly related to target but not avalable at the time of prediction is know as target leakage.
+
+2. test-train contamination : This happens when we unknowingly or subtly pass information from our train dataset to our validation dataset
+
+autoregressive model : statistical model is autoregressive if it predicts future values based on past values. For example, an autoregressive model might seek to predict a stock's future prices based on its past performance
+
+questions :
+pipeline
+target lekage
+k fold cross validation
+stratified k fold
+Chi square test
+L1 regularisation
+Sequencing prediction
+
+You can try to build your time-series forecasting model with LSTM or ARIMA on the Air Passengers dataset or try out this TensorFlow.js demo.

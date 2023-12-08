@@ -1,0 +1,35 @@
+
+stationary time series : series having 
+1. constant mean and
+2. constant variance and 
+3. not having seasonality
+
+non-stationary time series : series whis is not stationary
+
+
+Corelation : An indicator of relationship between two variable. value of corelations is in range between (1,-1)
+
+Auto-Corelation : corelation of variable with its previous values (lags).
+
+Auto-Corelation function : direct and indirect effect of previous values (lags).
+
+Partial auto-Corelation function : only direct effect of previous values (lags).
+
+auto-regresion : use past values to predect future
+
+moving average modals : use past error to predect future values.
+
+ARMA (auto-regresion moving average) modal : use past values and past error to predict the future.
+
+ARIMA (auto-regresion integgrated moving average) modal : use past values and past error to predict the future by converting non-stationary time series to stationary time series using difference current value with perevious value.
+
+vector auto regression modal : use its past value as well as other variable past values to predict future value.
+
+
+
+questions:
+1. fb prophet
+2. tenserflow
+3. LSTM blocks
+4. epochs
+5. batch_size
