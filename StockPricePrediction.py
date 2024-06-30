@@ -88,3 +88,6 @@ plt.plot(testPredictPlot)
 plt.show(block=False)
 
 # pd.DataFrame({'test':testY[0], 'pred':testPredict[:,0], 'predtestdiff':testY[0]-testPredict[:,0], 'diffperc':((testY[0]-testPredict[:,0])/testY[0])*100})
+
+# ----------------------------------------------------------------------------------------------------
+

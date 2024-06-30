@@ -61,3 +61,6 @@ from sklearn.tree import DecisionTreeRegressor
 DecisionTreeRegressor()
 from sklearn.tree import DecisionTreeClassifier
 DecisionTreeClassifier()
+
+# For finding number of end leaves in decision tree
+model.get_n_leaves()
